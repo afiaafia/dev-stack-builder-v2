@@ -38,11 +38,11 @@ function Hero() {
 
           <div className="mt-8 flex flex-wrap gap-6 text-sm text-slate-500">
             <div>
-              <span className="font-bold text-slate-900">12+</span> Technologies
+              <span className="font-bold text-slate-900">12</span> Technologies
             </div>
 
             <div>
-              <span className="font-bold text-slate-900">7</span> Categories
+              <span className="font-bold text-slate-900">6</span> Categories
             </div>
 
             <div>
