@@ -1,199 +1,152 @@
 import { useState } from 'react';
-import logoText from '../assets/logo-text.png';
-
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const closeMenu = () => {
     setMenuOpen(false);
   };
-
+  const navLinks = [
+    { label: 'Home', href: '#home' },
+    { label: 'Technologies', href: '#technologies' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'About', href: '#about' },
+    { label: 'Contact', href: '#contact' },
+  ];
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-md">
-      <div className="relative mx-auto flex h-18 max-w-7xl items-center justify-between px-6">
-        {/* Desktop Logo */}
+    <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur-md">
+      {' '}
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 md:px-8">
+        {' '}
+        {/* Brand */}{' '}
         <a
           href="#home"
-          className="hidden items-center md:flex"
           aria-label="Dev Stack home"
+          className="flex items-center gap-2.5"
+          onClick={closeMenu}
         >
-          <img
-            src={logoText}
-            alt="Dev Stack"
-            className="h-9 w-auto object-contain"
-          />
-        </a>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-8 md:flex">
-          <a
-            href="#home"
-            className="text-sm font-medium text-slate-700 transition hover:text-violet-600"
-          >
-            Home
-          </a>
-
-          <a
-            href="#technologies"
-            className="text-sm font-medium text-slate-700 transition hover:text-violet-600"
-          >
-            Technologies
-          </a>
-
-          <a
-            href="#projects"
-            className="text-sm font-medium text-slate-700 transition hover:text-violet-600"
-          >
-            Projects
-          </a>
-
-          <a
-            href="#about"
-            className="text-sm font-medium text-slate-700 transition hover:text-violet-600"
-          >
-            About
-          </a>
-
-          <a
-            href="#contact"
-            className="text-sm font-medium text-slate-700 transition hover:text-violet-600"
-          >
-            Contact
-          </a>
-        </nav>
-
-        {/* Desktop Actions */}
-        <div className="hidden items-center gap-3 md:flex">
+          {' '}
+          <span className="gradient-primary flex h-8 w-8 items-center justify-center rounded-lg text-xs font-extrabold text-white">
+            {' '}
+            DS{' '}
+          </span>{' '}
+          <span className="text-base font-bold tracking-tight text-slate-900">
+            {' '}
+            Dev Stack{' '}
+          </span>{' '}
+        </a>{' '}
+        {/* Desktop Navigation */}{' '}
+        <nav className="hidden items-center gap-7 md:flex">
+          {' '}
+          {navLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className={`text-sm font-medium transition ${link.label === 'Home' ? 'text-rose-500' : 'text-slate-600 hover:text-rose-500'}`}
+            >
+              {' '}
+              {link.label}{' '}
+            </a>
+          ))}{' '}
+        </nav>{' '}
+        {/* Desktop Actions */}{' '}
+        <div className="hidden items-center gap-2 md:flex">
+          {' '}
           <button
             type="button"
-            className="px-3 py-2 text-sm font-semibold text-slate-700 transition hover:text-violet-600"
+            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-50 hover:text-rose-500"
           >
-            Sign In
-          </button>
-
+            {' '}
+            Sign In{' '}
+          </button>{' '}
           <button
             type="button"
-            className="gradient-primary rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5"
+            className="rounded-full bg-linear-to-r from-rose-400 to-pink-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
           >
-            Sign Up
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        <div className="flex w-full items-center justify-between md:hidden">
-          {/* Hamburger */}
+            {' '}
+            Sign Up{' '}
+          </button>{' '}
+        </div>{' '}
+        {/* Mobile Controls */}{' '}
+        <div className="flex items-center gap-1 md:hidden">
+          {' '}
           <button
             type="button"
             onClick={() => setMenuOpen((current) => !current)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
-            className="rounded-lg p-2 text-slate-700 transition hover:bg-slate-100"
+            className="rounded-lg p-2 text-slate-600 transition hover:bg-slate-50"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              {menuOpen ? (
+            {' '}
+            {menuOpen ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                {' '}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   d="M6 6l12 12M18 6L6 18"
-                />
-              ) : (
+                />{' '}
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                {' '}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
-
-          {/* Center Logo */}
-          <a
-            href="#home"
-            onClick={closeMenu}
-            className="absolute left-1/2 -translate-x-1/2"
-            aria-label="Dev Stack home"
+                />{' '}
+              </svg>
+            )}{' '}
+          </button>{' '}
+          <button
+            type="button"
+            className="rounded-lg px-2 py-2 text-xs font-medium text-slate-600"
           >
-            <img
-              src={logoText}
-              alt="Dev Stack"
-              className="h-8 w-auto object-contain"
-            />
-          </a>
-
-          {/* Mobile Actions */}
-          <div className="flex items-center gap-1">
-            <button
-              type="button"
-              className="px-2 py-2 text-xs font-semibold text-slate-700 transition hover:text-violet-600"
-            >
-              Sign In
-            </button>
-
-            <button
-              type="button"
-              className="gradient-primary rounded-full px-3 py-2 text-xs font-semibold text-white"
-            >
-              Sign Up
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
+            {' '}
+            Sign In{' '}
+          </button>{' '}
+          <button
+            type="button"
+            className="rounded-full bg-linear-to-r from-rose-400 to-pink-600 px-3 py-2 text-xs font-semibold text-white"
+          >
+            {' '}
+            Sign Up{' '}
+          </button>{' '}
+        </div>{' '}
+      </div>{' '}
+      {/* Mobile Menu */}{' '}
       {menuOpen && (
-        <nav className="border-t border-slate-200 bg-white px-6 py-4 md:hidden">
-          <div className="flex flex-col gap-1">
-            <a
-              href="#home"
-              onClick={closeMenu}
-              className="rounded-lg px-3 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-violet-600"
-            >
-              Home
-            </a>
-
-            <a
-              href="#technologies"
-              onClick={closeMenu}
-              className="rounded-lg px-3 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-violet-600"
-            >
-              Technologies
-            </a>
-
-            <a
-              href="#projects"
-              onClick={closeMenu}
-              className="rounded-lg px-3 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-violet-600"
-            >
-              Projects
-            </a>
-
-            <a
-              href="#about"
-              onClick={closeMenu}
-              className="rounded-lg px-3 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-violet-600"
-            >
-              About
-            </a>
-
-            <a
-              href="#contact"
-              onClick={closeMenu}
-              className="rounded-lg px-3 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-violet-600"
-            >
-              Contact
-            </a>
-          </div>
+        <nav className="border-t border-slate-100 bg-white px-6 py-3 md:hidden">
+          {' '}
+          <div className="flex flex-col">
+            {' '}
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={closeMenu}
+                className={`rounded-lg px-3 py-3 text-sm font-medium transition ${link.label === 'Home' ? 'bg-rose-50 text-rose-500' : 'text-slate-600 hover:bg-slate-50 hover:text-rose-500'}`}
+              >
+                {' '}
+                {link.label}{' '}
+              </a>
+            ))}{' '}
+          </div>{' '}
         </nav>
-      )}
+      )}{' '}
     </header>
   );
 }
-
 export default Navbar;
