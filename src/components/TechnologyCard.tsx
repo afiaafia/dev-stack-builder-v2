@@ -5,21 +5,22 @@ interface TechnologyCardProps {
   onAdd: (technology: Technology) => void;
 }
 const badgeStyles: Record<string, string> = {
-  Popular: 'bg-[#E0F2FE] text-[#0284C7]',
-  Flexible: 'bg-[#DCFCE7] text-[#16A34A]',
-  Modern: 'bg-[#CCFBF1] text-[#0D9488]',
-  'Full Stack': 'bg-[#EDE9FE] text-[#7C3AED]',
-  Fast: 'bg-[#FFEDD5] text-[#EA580C]',
-  'Top SQL': 'bg-[#E0F2FE] text-[#0369A1]',
-  'Fast Data': 'bg-[#FEE2E2] text-[#DC2626]',
-  Essential: 'bg-[#FEF9C3] text-[#CA8A04]',
-  'Type Safe': 'bg-[#DBEAFE] text-[#2563EB]',
-  Versatile: 'bg-[#DCFCE7] text-[#16A34A]',
-  Containers: 'bg-[#E0F2FE] text-[#0284C7]',
+  Popular: 'border border-[#BAE6FD] bg-[#E0F2FE] text-[#0284C7]',
+  Flexible: 'border border-[#BBF7D0] bg-[#DCFCE7] text-[#16A34A]',
+  Modern: 'border border-[#99F6E4] bg-[#CCFBF1] text-[#0D9488]',
+  'Full Stack': 'border border-[#DDD6FE] bg-[#EDE9FE] text-[#7C3AED]',
+  Fast: 'border border-[#FED7AA] bg-[#FFEDD5] text-[#EA580C]',
+  'Top SQL': 'border border-[#BAE6FD] bg-[#E0F2FE] text-[#0369A1]',
+  'Fast Data': 'border border-[#FECACA] bg-[#FEE2E2] text-[#DC2626]',
+  Essential: 'border border-[#FEF08A] bg-[#FEF9C3] text-[#CA8A04]',
+  'Type Safe': 'border border-[#BFDBFE] bg-[#DBEAFE] text-[#2563EB]',
+  Versatile: 'border border-[#BBF7D0] bg-[#DCFCE7] text-[#16A34A]',
+  Containers: 'border border-[#BAE6FD] bg-[#E0F2FE] text-[#0284C7]',
 };
 function TechnologyCard({ technology, isAdded, onAdd }: TechnologyCardProps) {
   const badgeClass =
-    badgeStyles[technology.badge] ?? 'bg-slate-100 text-slate-600';
+    badgeStyles[technology.badge] ??
+    'border border-slate-200 bg-slate-100 text-slate-600';
   return (
     <article className="flex h-full flex-col rounded-xl border border-slate-100 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
       {' '}
