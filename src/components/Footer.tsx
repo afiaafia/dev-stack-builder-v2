@@ -3,7 +3,6 @@ function Footer() {
     <footer id="contact" className="border-t border-slate-100 bg-white">
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-8 md:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
           <div>
             <a
               href="#home"
@@ -14,7 +13,7 @@ function Footer() {
                 DS
               </span>
 
-              <span className="text-base font-bold tracking-tight text-slate-900">
+              <span className="gradient-text text-base font-bold tracking-tight">
                 Dev Stack
               </span>
             </a>
@@ -57,7 +56,6 @@ function Footer() {
             </div>
           </div>
 
-          {/* Product */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wide text-slate-900">
               Product
@@ -87,7 +85,6 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wide text-slate-900">
               Company
@@ -114,7 +111,6 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wide text-slate-900">
               Legal
@@ -136,7 +132,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Bottom */}
         <div className="mt-14 flex flex-col gap-3 border-t border-slate-100 pt-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 DevStack. All rights reserved.</p>
 
