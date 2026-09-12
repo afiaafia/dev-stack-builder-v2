@@ -19,16 +19,16 @@ function Navbar() {
         {/* Brand */}{' '}
         <a
           href="#home"
+          onClick={closeMenu}
           aria-label="Dev Stack home"
           className="flex items-center gap-2.5"
-          onClick={closeMenu}
         >
           {' '}
           <span className="gradient-primary flex h-8 w-8 items-center justify-center rounded-lg text-xs font-extrabold text-white">
             {' '}
             DS{' '}
           </span>{' '}
-          <span className="text-base font-bold tracking-tight text-slate-900">
+          <span className="text-[18px] font-bold tracking-tight text-slate-900">
             {' '}
             Dev Stack{' '}
           </span>{' '}
@@ -40,7 +40,7 @@ function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className={`text-sm font-medium transition ${link.label === 'Home' ? 'text-rose-500' : 'text-slate-600 hover:text-rose-500'}`}
+              className={`text-sm font-medium transition ${link.label === 'Home' ? 'text-rose-600' : 'text-slate-600 hover:text-rose-600'}`}
             >
               {' '}
               {link.label}{' '}
@@ -52,14 +52,14 @@ function Navbar() {
           {' '}
           <button
             type="button"
-            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-50 hover:text-rose-500"
+            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:text-rose-600"
           >
             {' '}
             Sign In{' '}
           </button>{' '}
           <button
             type="button"
-            className="rounded-full bg-linear-to-r from-rose-400 to-pink-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+            className="gradient-primary rounded-full px-4.5 py-2 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
           >
             {' '}
             Sign Up{' '}
@@ -119,7 +119,7 @@ function Navbar() {
           </button>{' '}
           <button
             type="button"
-            className="rounded-full bg-linear-to-r from-rose-400 to-pink-600 px-3 py-2 text-xs font-semibold text-white"
+            className="gradient-primary rounded-full px-3 py-2 text-xs font-semibold text-white"
           >
             {' '}
             Sign Up{' '}
@@ -137,7 +137,7 @@ function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={closeMenu}
-                className={`rounded-lg px-3 py-3 text-sm font-medium transition ${link.label === 'Home' ? 'bg-rose-50 text-rose-500' : 'text-slate-600 hover:bg-slate-50 hover:text-rose-500'}`}
+                className={`rounded-lg px-3 py-3 text-sm font-medium transition ${link.label === 'Home' ? 'bg-rose-50 text-rose-600' : 'text-slate-600 hover:bg-slate-50 hover:text-rose-600'}`}
               >
                 {' '}
                 {link.label}{' '}
