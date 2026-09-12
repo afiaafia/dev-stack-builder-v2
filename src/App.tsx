@@ -78,22 +78,23 @@ function App() {
       <Navbar /> <Hero />{' '}
       <main className="mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-20">
         {' '}
-        {/* Technologies */}{' '}
         <section id="technologies">
           {' '}
-          <div className="text-center">
+          {/* Section Header */}{' '}
+          <div className="text-left">
             {' '}
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
               {' '}
               Explore the{' '}
-              <span className="gradient-text">Technologies</span>{' '}
+              <span className="gradient-text-pink">Technologies</span>{' '}
             </h2>{' '}
-            <p className="mx-auto mt-3 max-w-xl text-sm text-slate-400 sm:text-base">
+            <p className="mt-3 max-w-xl text-sm text-slate-500 sm:text-base">
               {' '}
               Pick one technology per category to build your ideal stack.{' '}
             </p>{' '}
           </div>{' '}
-          <div className="mt-12 grid items-start gap-6 lg:grid-cols-4">
+          {/* Technology Grid + Sidebar */}{' '}
+          <div className="mt-10 grid items-start gap-6 lg:grid-cols-4">
             {' '}
             {/* Technology Cards */}{' '}
             <div className="lg:col-span-3">
@@ -190,86 +191,6 @@ function App() {
                 </>
               )}{' '}
             </aside>{' '}
-          </div>{' '}
-        </section>{' '}
-        {/* About */}{' '}
-        <section id="about" className="mt-20 border-t border-slate-100 pt-16">
-          {' '}
-          <div className="mx-auto max-w-3xl text-center">
-            {' '}
-            <p className="text-xs font-semibold uppercase tracking-widest text-slate-400">
-              {' '}
-              About Dev Stack{' '}
-            </p>{' '}
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              {' '}
-              Build your stack with confidence.{' '}
-            </h2>{' '}
-            <p className="mt-5 text-sm leading-6 text-slate-500 sm:text-base">
-              {' '}
-              Dev Stack Builder helps developers explore popular technologies,
-              understand where they fit, and create a personalized technology
-              stack. Select the tools you want to work with and keep your
-              development choices organized in one place.{' '}
-            </p>{' '}
-          </div>{' '}
-        </section>{' '}
-        {/* Projects */}{' '}
-        <section
-          id="projects"
-          className="mt-20 border-t border-slate-100 pt-16"
-        >
-          {' '}
-          <div className="text-center">
-            {' '}
-            <p className="text-xs font-semibold uppercase tracking-widest text-slate-400">
-              {' '}
-              Projects{' '}
-            </p>{' '}
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              {' '}
-              Build with your stack{' '}
-            </h2>{' '}
-            <p className="mx-auto mt-4 max-w-xl text-sm text-slate-500 sm:text-base">
-              {' '}
-              Choose technologies that match your project requirements and
-              development goals.{' '}
-            </p>{' '}
-          </div>{' '}
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
-            {' '}
-            {[
-              {
-                title: 'Frontend Applications',
-                description:
-                  'Create responsive and interactive user interfaces with modern frontend technologies.',
-              },
-              {
-                title: 'Backend Services',
-                description:
-                  'Build scalable APIs and server-side applications with reliable backend tools.',
-              },
-              {
-                title: 'Full-Stack Products',
-                description:
-                  'Combine frontend, backend, databases, and DevOps tools into complete applications.',
-              },
-            ].map((project) => (
-              <article
-                key={project.title}
-                className="rounded-xl border border-slate-100 bg-white p-5 shadow-sm"
-              >
-                {' '}
-                <h3 className="text-base font-bold text-slate-900">
-                  {' '}
-                  {project.title}{' '}
-                </h3>{' '}
-                <p className="mt-3 text-xs leading-5 text-slate-500">
-                  {' '}
-                  {project.description}{' '}
-                </p>{' '}
-              </article>
-            ))}{' '}
           </div>{' '}
         </section>{' '}
       </main>{' '}

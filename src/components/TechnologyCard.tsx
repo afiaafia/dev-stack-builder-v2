@@ -25,7 +25,7 @@ function TechnologyCard({ technology, isAdded, onAdd }: TechnologyCardProps) {
     <article className="flex h-full flex-col rounded-xl border border-slate-100 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
       {' '}
       {/* Icon + Badge */}{' '}
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex w-full items-center justify-between gap-4">
         {' '}
         <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-slate-50 p-2">
           {' '}
@@ -49,7 +49,7 @@ function TechnologyCard({ technology, isAdded, onAdd }: TechnologyCardProps) {
           {' '}
           {technology.name}{' '}
         </h3>{' '}
-        <p className="mt-2 line-clamp-3 text-xs leading-5 text-slate-500">
+        <p className="mt-2 line-clamp-2 text-xs leading-5 text-slate-500">
           {' '}
           {technology.description}{' '}
         </p>{' '}
@@ -64,7 +64,7 @@ function TechnologyCard({ technology, isAdded, onAdd }: TechnologyCardProps) {
             {' '}
             {technology.difficulty}{' '}
           </span>{' '}
-          <span className="font-semibold text-slate-600">
+          <span className="whitespace-nowrap font-semibold text-slate-600">
             {' '}
             <span className="text-amber-500">★</span> {technology.rating}{' '}
           </span>{' '}
@@ -74,7 +74,7 @@ function TechnologyCard({ technology, isAdded, onAdd }: TechnologyCardProps) {
           type="button"
           onClick={() => onAdd(technology)}
           disabled={isAdded}
-          className={`mt-4 w-full rounded-lg py-2 text-xs font-semibold transition ${isAdded ? 'cursor-not-allowed bg-slate-200 text-slate-500' : 'bg-slate-900 text-white hover:bg-slate-800'}`}
+          className={`mt-4 w-full rounded-md py-2 text-xs font-semibold transition ${isAdded ? 'cursor-not-allowed bg-slate-200 text-slate-500' : 'bg-slate-900 text-white hover:bg-slate-800'}`}
         >
           {' '}
           {isAdded ? '✓ Added to Stack' : 'Add to Stack'}{' '}

@@ -4,7 +4,7 @@
     "name": "React",
     "category": "Frontend",
     "description": "A component-based JavaScript library for building interactive and reusable user interfaces.",
-    "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -14,7 +14,7 @@
     "name": "Vue.js",
     "category": "Frontend",
     "description": "A progressive JavaScript framework for building flexible and maintainable user interfaces.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Flexible"
@@ -24,7 +24,7 @@
     "name": "Svelte",
     "category": "Frontend",
     "description": "A modern frontend framework that compiles components into efficient JavaScript for fast web experiences.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Svelte.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
     "badge": "Modern"
@@ -34,7 +34,7 @@
     "name": "Next.js",
     "category": "Frontend",
     "description": "A React framework for building fast, scalable, and production-ready web applications.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Full Stack"
@@ -44,7 +44,7 @@
     "name": "Node.js",
     "category": "Backend",
     "description": "A JavaScript runtime used to build fast and scalable server-side applications.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Fast"
@@ -54,7 +54,7 @@
     "name": "PostgreSQL",
     "category": "Database",
     "description": "A powerful open-source relational database known for reliability, performance, and advanced SQL features.",
-    "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Top SQL"
@@ -64,7 +64,7 @@
     "name": "Redis",
     "category": "Database",
     "description": "An in-memory data store commonly used for caching, sessions, queues, and high-speed application data.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Redis.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
     "badge": "Fast Data"
@@ -74,7 +74,7 @@
     "name": "JavaScript",
     "category": "Language",
     "description": "A versatile programming language used to create dynamic and interactive experiences across the web.",
-    "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
@@ -84,7 +84,7 @@
     "name": "TypeScript",
     "category": "Language",
     "description": "A strongly typed programming language that builds on JavaScript to improve code quality and maintainability.",
-    "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Type Safe"
@@ -94,7 +94,7 @@
     "name": "Java",
     "category": "Language",
     "description": "A widely used object-oriented programming language for building reliable applications across different platforms.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Java.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
     "badge": "Versatile"
@@ -104,7 +104,7 @@
     "name": "Tailwind CSS",
     "category": "Styling",
     "description": "A utility-first CSS framework for quickly building modern and responsive user interfaces.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Modern"
@@ -114,7 +114,7 @@
     "name": "Docker",
     "category": "DevOps",
     "description": "A platform for packaging applications and their dependencies into portable and consistent containers.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Containers"

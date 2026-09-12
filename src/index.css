@@ -1,6 +1,11 @@
 @import 'tailwindcss';
 :root {
-  --primary-gradient: linear-gradient(to right, #f97316, #ec4899, #7c3aed);
+  --primary-gradient: linear-gradient(
+    90deg,
+    #ff4d4d 0%,
+    #e11d48 50%,
+    #9333ea 100%
+  );
 }
 * {
   box-sizing: border-box;
@@ -11,12 +16,19 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
 }
 .gradient-primary {
   background: var(--primary-gradient);
 }
 .gradient-text {
   background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.gradient-text-pink {
+  background: linear-gradient(90deg, #e11d48 0%, #9333ea 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
