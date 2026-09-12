@@ -103,6 +103,10 @@ npm run build
 
 [Live Demo](https://dev-stack-builder-v2.vercel.app/)
 
+## Preview
+
+![Dev Stack Builder Preview](./preview/Preview.png)
+
 ## License
 
 This project was created for educational purposes.
