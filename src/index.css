@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+:root {
+  --primary-gradient: linear-gradient(to right, #f97316, #ec4899, #7c3aed);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.gradient-primary {
+  background: var(--primary-gradient);
+}
+.gradient-text {
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
