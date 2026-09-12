@@ -7,8 +7,8 @@ Users can browse technologies by their details, add technologies to their stack,
 ## Features
 
 - **Explore Technologies** — Browse 12 modern technologies with category, difficulty, rating, description, and technology icons.
-- **Build Your Stack** — Add technologies to a personal stack with duplicate prevention and easy removal.
-- **Responsive Interface** — Fully responsive layout with a desktop navigation bar, mobile menu, technology cards, stack sidebar, and footer.
+- **Build Your Stack** — Add technologies to a personal stack with duplicate prevention, toast notifications, and easy removal.
+- **Responsive Interface** — Fully responsive layout with desktop and mobile navigation, technology cards, stack sidebar, and footer.
 
 ## Technologies Used
 
@@ -69,4 +69,4 @@ In this project, `App` passes technology data and the `onAdd` callback to `Techn
 
 ### 1. Clone the repository
 
-git clone <your-repository-url>
+git clone https://github.com/afiaafia/dev-stack-builder-v2.git
