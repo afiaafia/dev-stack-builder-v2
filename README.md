@@ -101,7 +101,7 @@ npm run build
 
 ## Live Demo
 
-[Coming soon.](https://dev-stack-builder-v2.vercel.app/)
+[Live Demo](https://dev-stack-builder-v2.vercel.app/)
 
 ## License
 
