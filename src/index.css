@@ -27,9 +27,3 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
-.gradient-text-pink {
-  background: linear-gradient(90deg, #e11d48 0%, #9333ea 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
